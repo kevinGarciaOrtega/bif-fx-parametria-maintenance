@@ -1,0 +1,82 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PN#001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PN" },
+          "id": { "S": "001" },
+          "importeMinimo": { "N": "0.00" },
+          "importeMaximo": { "N": "500.00" },
+          "pips": { "N": "100" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PN#002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PN" },
+          "id": { "S": "002" },
+          "importeMinimo": { "N": "500.00" },
+          "importeMaximo": { "N": "1500.00" },
+          "pips": { "N": "80" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PN#003" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PN" },
+          "id": { "S": "003" },
+          "importeMinimo": { "N": "1500.00" },
+          "importeMaximo": { "N": "10000.00" },
+          "pips": { "N": "50" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PN#004" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PN" },
+          "id": { "S": "004" },
+          "importeMinimo": { "N": "10000.00" },
+          "importeMaximo": { "N": "25000.00" },
+          "pips": { "N": "35" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PN#005" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PN" },
+          "id": { "S": "005" },
+          "importeMinimo": { "N": "25000.00" },
+          "importeMaximo": { "N": "40000.00" },
+          "pips": { "N": "25" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PN#006" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PN" },
+          "id": { "S": "006" },
+          "importeMinimo": { "N": "40000.00" },
+          "importeMaximo": { "N": "50000.00" },
+          "pips": { "N": "15" }
+        }
+      }
+    }
+  ]
+}

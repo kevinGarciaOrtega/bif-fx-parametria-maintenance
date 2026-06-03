@@ -1,0 +1,58 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "USUARIO#USR001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "USUARIO" },
+          "usuarioId": { "S": "USR001" },
+          "username": { "S": "ROBERT.GARCIA" },
+          "nombre": { "S": "Robert" },
+          "apellido": { "S": "Garcia" },
+          "email": { "S": "rgarcia@banbif.com.pe" },
+          "perfilId": { "S": "ADMINISTRADOR" },
+          "estado": { "S": "ACTIVO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "USUARIO#USR001" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "USUARIO#USR002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "USUARIO" },
+          "usuarioId": { "S": "USR002" },
+          "username": { "S": "ANA.TORRES" },
+          "nombre": { "S": "Ana" },
+          "apellido": { "S": "Torres" },
+          "email": { "S": "atorres@banbif.com.pe" },
+          "perfilId": { "S": "OPERATIVO" },
+          "estado": { "S": "ACTIVO" },
+          "GSI3PK": { "S": "PERFIL#OPERATIVO" },
+          "GSI3SK": { "S": "USUARIO#USR002" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "USUARIO#USR003" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "USUARIO" },
+          "usuarioId": { "S": "USR003" },
+          "username": { "S": "LUIS.MENDOZA" },
+          "nombre": { "S": "Luis" },
+          "apellido": { "S": "Mendoza" },
+          "email": { "S": "lmendoza@banbif.com.pe" },
+          "perfilId": { "S": "CONSULTOR" },
+          "estado": { "S": "ACTIVO" },
+          "GSI3PK": { "S": "PERFIL#CONSULTOR" },
+          "GSI3SK": { "S": "USUARIO#USR003" }
+        }
+      }
+    }
+  ]
+}

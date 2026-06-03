@@ -1,0 +1,148 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-01-01" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-01-01" },
+          "descripcion": { "S": "Año Nuevo" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-04-02" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-04-02" },
+          "descripcion": { "S": "Jueves Santo" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-04-03" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-04-03" },
+          "descripcion": { "S": "Viernes Santo" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-05-01" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-05-01" },
+          "descripcion": { "S": "Día del Trabajo" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-06-29" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-06-29" },
+          "descripcion": { "S": "San Pedro y San Pablo" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-07-28" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-07-28" },
+          "descripcion": { "S": "Fiestas Patrias" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-07-29" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-07-29" },
+          "descripcion": { "S": "Fiestas Patrias" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-08-30" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-08-30" },
+          "descripcion": { "S": "Santa Rosa de Lima" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-10-08" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-10-08" },
+          "descripcion": { "S": "Combate de Angamos" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-11-01" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-11-01" },
+          "descripcion": { "S": "Todos los Santos" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-12-08" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-12-08" },
+          "descripcion": { "S": "Inmaculada Concepción" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "FERIADO#2026" },
+          "SK": { "S": "FECHA#2026-12-25" },
+          "tipo": { "S": "FERIADO" },
+          "anio": { "N": "2026" },
+          "fecha": { "S": "2026-12-25" },
+          "descripcion": { "S": "Navidad" }
+        }
+      }
+    }
+  ]
+}

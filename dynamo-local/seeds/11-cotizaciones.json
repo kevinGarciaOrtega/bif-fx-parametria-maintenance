@@ -1,0 +1,48 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "COTIZACION#uuid-001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "COTIZACION" },
+          "estado": { "S": "TRANSFERIDA" },
+          "clienteId": { "S": "2969845" },
+          "parMoneda": { "S": "USD/PEN" },
+          "sentido": { "S": "VENTA" },
+          "monto": { "N": "5.62" },
+          "tcAplicado": { "N": "3.5600" },
+          "montoCalculado": { "N": "20.01" },
+          "fechaCotizacion": { "S": "2026-05-25T10:00:00Z" },
+          "fechaExpiracion": { "S": "2026-05-25T10:05:00Z" },
+          "GSI1PK": { "S": "TRANSFERIDA" },
+          "GSI1SK": { "S": "2026-05-25T10:05:00Z" },
+          "GSI2PK": { "S": "CLIENTE#2969845" },
+          "GSI2SK": { "S": "2026-05-25T10:00:00Z" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "COTIZACION#uuid-002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "COTIZACION" },
+          "estado": { "S": "COTIZADA" },
+          "clienteId": { "S": "2507873" },
+          "parMoneda": { "S": "USD/PEN" },
+          "sentido": { "S": "VENTA" },
+          "monto": { "N": "2.81" },
+          "tcAplicado": { "N": "3.5650" },
+          "montoCalculado": { "N": "10.02" },
+          "fechaCotizacion": { "S": "2026-05-25T10:10:00Z" },
+          "fechaExpiracion": { "S": "2026-05-25T10:15:00Z" },
+          "GSI1PK": { "S": "COTIZADA" },
+          "GSI1SK": { "S": "2026-05-25T10:15:00Z" },
+          "GSI2PK": { "S": "CLIENTE#2507873" },
+          "GSI2SK": { "S": "2026-05-25T10:10:00Z" }
+        }
+      }
+    }
+  ]
+}

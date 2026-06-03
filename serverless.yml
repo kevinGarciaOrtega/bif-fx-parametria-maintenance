@@ -1,0 +1,372 @@
+service: bif-fx-parameterization-maintenance-svc
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: ${opt:stage, 'dev'}
+  region: us-east-1
+  memorySize: 256
+  timeout: 29
+  environment:
+    DYNAMO_TABLE: tablero-${self:provider.stage}
+    STAGE: ${self:provider.stage}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:BatchWriteItem
+          Resource:
+            - arn:aws:dynamodb:${self:provider.region}:*:table/tablero-${self:provider.stage}
+            - arn:aws:dynamodb:${self:provider.region}:*:table/tablero-${self:provider.stage}/index/*
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 3000
+    noPrependStageInUrl: false
+
+functions:
+
+  # ── VOLATILIDAD ──────────────────────────────────────────
+  listarVolatilidad:
+    handler: dist/handlers/volatilidad.handler.listar
+    events:
+      - http:
+          path: /parametros/volatilidad
+          method: GET
+          cors: true
+
+  actualizarVolatilidad:
+    handler: dist/handlers/volatilidad.handler.actualizar
+    events:
+      - http:
+          path: /parametros/volatilidad/{id}
+          method: PUT
+          cors: true
+
+  # ── HORARIO MERCADO ──────────────────────────────────────
+  # (handler pendiente de implementar)
+  # listarHorarioMercado:
+  #   handler: src/handlers/horarioMercado.handler.listar
+  #   events:
+  #     - http:
+  #         path: /parametros/horario-mercado
+  #         method: GET
+  #         cors: true
+
+  # actualizarHorarioMercado:
+  #   handler: src/handlers/horarioMercado.handler.actualizar
+  #   events:
+  #     - http:
+  #         path: /parametros/horario-mercado/{id}
+  #         method: PUT
+  #         cors: true
+
+  # ── FERIADOS ─────────────────────────────────────────────
+  # (handler pendiente de implementar)
+  # listarFeriados:
+  #   handler: src/handlers/feriado.handler.listar
+  #   events:
+  #     - http:
+  #         path: /parametros/feriados
+  #         method: GET
+  #         cors: true
+
+  # crearFeriado:
+  #   handler: src/handlers/feriado.handler.crear
+  #   events:
+  #     - http:
+  #         path: /parametros/feriados
+  #         method: POST
+  #         cors: true
+
+  # eliminarFeriado:
+  #   handler: src/handlers/feriado.handler.eliminar
+  #   events:
+  #     - http:
+  #         path: /parametros/feriados/{fecha}
+  #         method: DELETE
+  #         cors: true
+
+  # ── RANGO IMPORTE PN ─────────────────────────────────────
+  listarRangoImportePN:
+    handler: dist/handlers/rangoImporte.handler.listarPN
+    events:
+      - http:
+          path: /parametros/rango-importe/pn
+          method: GET
+          cors: true
+
+  crearRangoImportePN:
+    handler: dist/handlers/rangoImporte.handler.crearPN
+    events:
+      - http:
+          path: /parametros/rango-importe/pn
+          method: POST
+          cors: true
+
+  actualizarRangoImportePN:
+    handler: dist/handlers/rangoImporte.handler.actualizarPN
+    events:
+      - http:
+          path: /parametros/rango-importe/pn/{id}
+          method: PUT
+          cors: true
+
+  eliminarRangoImportePN:
+    handler: dist/handlers/rangoImporte.handler.eliminarPN
+    events:
+      - http:
+          path: /parametros/rango-importe/pn/{id}
+          method: DELETE
+          cors: true
+
+  # ── RANGO IMPORTE PJ ─────────────────────────────────────
+  listarRangoImportePJ:
+    handler: dist/handlers/rangoImporte.handler.listarPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj
+          method: GET
+          cors: true
+
+  crearRangoImportePJ:
+    handler: dist/handlers/rangoImporte.handler.crearPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj
+          method: POST
+          cors: true
+
+  actualizarRangoImportePJ:
+    handler: dist/handlers/rangoImporte.handler.actualizarPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj/{id}
+          method: PUT
+          cors: true
+
+  eliminarRangoImportePJ:
+    handler: dist/handlers/rangoImporte.handler.eliminarPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj/{id}
+          method: DELETE
+          cors: true
+
+  # ── SEGMENTO ─────────────────────────────────────────────
+  # (handler pendiente de implementar)
+  # buscarSegmento:
+  #   handler: src/handlers/segmento.handler.buscar
+  #   events:
+  #     - http:
+  #         path: /parametros/segmento
+  #         method: GET
+  #         cors: true
+
+  # crearSegmento:
+  #   handler: src/handlers/segmento.handler.crear
+  #   events:
+  #     - http:
+  #         path: /parametros/segmento
+  #         method: POST
+  #         cors: true
+
+  # actualizarSegmento:
+  #   handler: src/handlers/segmento.handler.actualizar
+  #   events:
+  #     - http:
+  #         path: /parametros/segmento/{codigoBanca}
+  #         method: PUT
+  #         cors: true
+
+  # eliminarSegmento:
+  #   handler: src/handlers/segmento.handler.eliminar
+  #   events:
+  #     - http:
+  #         path: /parametros/segmento/{codigoBanca}
+  #         method: DELETE
+  #         cors: true
+
+  # ── SPREAD LIQUIDEZ ──────────────────────────────────────
+  # (handler pendiente de implementar)
+  # listarSpreadLiquidez:
+  #   handler: src/handlers/spreadLiquidez.handler.listar
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-liquidez
+  #         method: GET
+  #         cors: true
+
+  # actualizarSpreadLiquidez:
+  #   handler: src/handlers/spreadLiquidez.handler.actualizar
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-liquidez/{tipoMercado}/{sentidoOperacion}
+  #         method: PUT
+  #         cors: true
+
+  # ── SPREAD CLIENTE ───────────────────────────────────────
+  # (handler pendiente de implementar)
+  # buscarSpreadCliente:
+  #   handler: src/handlers/spreadCliente.handler.buscar
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-cliente
+  #         method: GET
+  #         cors: true
+
+  # crearSpreadCliente:
+  #   handler: src/handlers/spreadCliente.handler.crear
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-cliente
+  #         method: POST
+  #         cors: true
+
+  # actualizarSpreadCliente:
+  #   handler: src/handlers/spreadCliente.handler.actualizar
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-cliente/{codigoIbs}
+  #         method: PUT
+  #         cors: true
+
+  # eliminarSpreadCliente:
+  #   handler: src/handlers/spreadCliente.handler.eliminar
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-cliente/{codigoIbs}
+  #         method: DELETE
+  #         cors: true
+
+  # buscarClienteIbs:
+  #   handler: src/handlers/spreadCliente.handler.buscarIbs
+  #   events:
+  #     - http:
+  #         path: /parametros/spread-cliente/buscar-ibs/{codigoIbs}
+  #         method: GET
+  #         cors: true
+
+  # ── TIPO DE CAMBIO ───────────────────────────────────────
+  # (handler pendiente de implementar)
+  # obtenerTCBase:
+  #   handler: src/handlers/tipoCambio.handler.obtenerBase
+  #   events:
+  #     - http:
+  #         path: /tipo-cambio/base
+  #         method: GET
+  #         cors: true
+
+  # editarTCBase:
+  #   handler: src/handlers/tipoCambio.handler.editarBase
+  #   events:
+  #     - http:
+  #         path: /tipo-cambio/base/{parMoneda}
+  #         method: PUT
+  #         cors: true
+
+  # auditoriaTCBase:
+  #   handler: src/handlers/tipoCambio.handler.auditoriaBase
+  #   events:
+  #     - http:
+  #         path: /tipo-cambio/base/{parMoneda}/auditoria
+  #         method: GET
+  #         cors: true
+
+  # obtenerTCVentanilla:
+  #   handler: src/handlers/tipoCambio.handler.obtenerVentanilla
+  #   events:
+  #     - http:
+  #         path: /tipo-cambio/ventanilla/{parMoneda}
+  #         method: GET
+  #         cors: true
+
+  # enviarTCVentanilla:
+  #   handler: src/handlers/tipoCambio.handler.enviarVentanilla
+  #   events:
+  #     - http:
+  #         path: /tipo-cambio/ventanilla/{parMoneda}
+  #         method: POST
+  #         cors: true
+
+  # ── PARAMETRO SISTEMA ────────────────────────────────────
+  # (handler pendiente de implementar)
+  # listarParametrosSistema:
+  #   handler: src/handlers/parametroSistema.handler.listar
+  #   events:
+  #     - http:
+  #         path: /parametros/sistema
+  #         method: GET
+  #         cors: true
+
+  # actualizarParametroSistema:
+  #   handler: src/handlers/parametroSistema.handler.actualizar
+  #   events:
+  #     - http:
+  #         path: /parametros/sistema/{grupo}/{clave}
+  #         method: PUT
+  #         cors: true
+
+  # ── USUARIO ──────────────────────────────────────────────
+  # (handler pendiente de implementar)
+  # listarUsuarios:
+  #   handler: src/handlers/usuario.handler.listar
+  #   events:
+  #     - http:
+  #         path: /usuarios
+  #         method: GET
+  #         cors: true
+
+  # crearUsuario:
+  #   handler: src/handlers/usuario.handler.crear
+  #   events:
+  #     - http:
+  #         path: /usuarios
+  #         method: POST
+  #         cors: true
+
+  # actualizarUsuario:
+  #   handler: src/handlers/usuario.handler.actualizar
+  #   events:
+  #     - http:
+  #         path: /usuarios/{usuarioId}
+  #         method: PUT
+  #         cors: true
+
+  # desactivarUsuario:
+  #   handler: src/handlers/usuario.handler.desactivar
+  #   events:
+  #     - http:
+  #         path: /usuarios/{usuarioId}
+  #         method: DELETE
+  #         cors: true
+
+  # ── PERFIL ───────────────────────────────────────────────
+  # (handler pendiente de implementar)
+  # listarPerfiles:
+  #   handler: src/handlers/perfil.handler.listar
+  #   events:
+  #     - http:
+  #         path: /perfiles
+  #         method: GET
+  #         cors: true
+
+  # obtenerAccesosPerfil:
+  #   handler: src/handlers/perfil.handler.obtenerAccesos
+  #   events:
+  #     - http:
+  #         path: /perfiles/{perfilId}/accesos
+  #         method: GET
+  #         cors: true

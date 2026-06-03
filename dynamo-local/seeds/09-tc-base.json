@@ -1,0 +1,54 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_BASE#USD_PEN" },
+          "SK": { "S": "ACTIVO" },
+          "tipo": { "S": "TC_BASE" },
+          "parMoneda": { "S": "USD/PEN" },
+          "monedaOrigen": { "S": "USD" },
+          "monedaDestino": { "S": "PEN" },
+          "fuente": { "S": "DATATEC" },
+          "fuenteCompra": { "S": "TIPO CAMBIO DATATEC COMPRA" },
+          "valorCompra": { "N": "3.368000" },
+          "fuenteVenta": { "S": "TIPO CAMBIO DATATEC VENTA" },
+          "valorVenta": { "N": "3.370000" },
+          "ultimaActualizacion": { "S": "2026-02-05T08:00:00Z" },
+          "estadoVentana": { "S": "CERRADO" },
+          "esEdicionManual": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_BASE#USD_PEN" },
+          "SK": { "S": "AUDITORIA#2026-02-05T08:00:00Z" },
+          "tipo": { "S": "TC_BASE_AUDITORIA" },
+          "valorCompraAnterior": { "N": "3.360000" },
+          "valorCompraNuevo": { "N": "3.368000" },
+          "valorVentaAnterior": { "N": "3.362000" },
+          "valorVentaNuevo": { "N": "3.370000" },
+          "esEdicionManual": { "BOOL": false },
+          "updatedBy": { "S": "SISTEMA" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_BASE#EUR_PEN" },
+          "SK": { "S": "ACTIVO" },
+          "tipo": { "S": "TC_BASE" },
+          "parMoneda": { "S": "EUR/PEN" },
+          "fuente": { "S": "BLOOMBERG" },
+          "valorCompra": { "N": "3.600000" },
+          "valorVenta": { "N": "3.650000" },
+          "estadoVentana": { "S": "CERRADO" },
+          "esEdicionManual": { "BOOL": false }
+        }
+      }
+    }
+  ]
+}

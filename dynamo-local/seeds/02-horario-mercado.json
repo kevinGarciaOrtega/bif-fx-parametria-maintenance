@@ -1,0 +1,32 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "HORARIO#001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "HORARIO" },
+          "id": { "S": "001" },
+          "nombre": { "S": "Horario de mercado abierto" },
+          "horaApertura": { "S": "09:00" },
+          "horaCierre": { "S": "15:00" },
+          "pips": { "N": "120" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "HORARIO#002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "HORARIO" },
+          "id": { "S": "002" },
+          "nombre": { "S": "Horario de mercado cerrado" },
+          "horaApertura": { "S": "15:01" },
+          "horaCierre": { "S": "08:59" },
+          "pips": { "N": "150" }
+        }
+      }
+    }
+  ]
+}

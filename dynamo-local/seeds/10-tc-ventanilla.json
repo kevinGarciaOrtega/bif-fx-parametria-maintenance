@@ -1,0 +1,68 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_VENTANILLA#USD_PEN" },
+          "SK": { "S": "SEGMENTO#EMPLEADO" },
+          "tipo": { "S": "TC_VENTANILLA" },
+          "segmento": { "S": "EMPLEADO" },
+          "tcBaseCompraRef": { "N": "3.368000" },
+          "tcBaseVentaRef": { "N": "3.370000" },
+          "spreadCompraPips": { "N": "-5" },
+          "spreadVentaPips": { "N": "5" },
+          "valorCompra": { "N": "3.363000" },
+          "valorVenta": { "N": "3.375000" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_VENTANILLA#USD_PEN" },
+          "SK": { "S": "SEGMENTO#PREMIUM" },
+          "tipo": { "S": "TC_VENTANILLA" },
+          "segmento": { "S": "PREMIUM" },
+          "tcBaseCompraRef": { "N": "3.368000" },
+          "tcBaseVentaRef": { "N": "3.370000" },
+          "spreadCompraPips": { "N": "-55" },
+          "spreadVentaPips": { "N": "55" },
+          "valorCompra": { "N": "3.313000" },
+          "valorVenta": { "N": "3.425000" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_VENTANILLA#USD_PEN" },
+          "SK": { "S": "SEGMENTO#PREFERENCIAL" },
+          "tipo": { "S": "TC_VENTANILLA" },
+          "segmento": { "S": "PREFERENCIAL" },
+          "tcBaseCompraRef": { "N": "3.368000" },
+          "tcBaseVentaRef": { "N": "3.370000" },
+          "spreadCompraPips": { "N": "-180" },
+          "spreadVentaPips": { "N": "180" },
+          "valorCompra": { "N": "3.188000" },
+          "valorVenta": { "N": "3.550000" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "TC_VENTANILLA#USD_PEN" },
+          "SK": { "S": "SEGMENTO#PIZARRA" },
+          "tipo": { "S": "TC_VENTANILLA" },
+          "segmento": { "S": "PIZARRA" },
+          "tcBaseCompraRef": { "N": "3.368000" },
+          "tcBaseVentaRef": { "N": "3.370000" },
+          "spreadCompraPips": { "N": "-220" },
+          "spreadVentaPips": { "N": "220" },
+          "valorCompra": { "N": "3.148000" },
+          "valorVenta": { "N": "3.590000" }
+        }
+      }
+    }
+  ]
+}

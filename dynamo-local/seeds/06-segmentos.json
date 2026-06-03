@@ -1,0 +1,124 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0001" },
+          "descripcionBanca": { "S": "DIVISION DE NEGOCIOS" },
+          "pips": { "N": "100" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "DIVISION DE NEGOCIOS" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0002" },
+          "descripcionBanca": { "S": "BANCA PREMIUM" },
+          "pips": { "N": "150" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "BANCA PREMIUM" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0003" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0003" },
+          "descripcionBanca": { "S": "RECURSOS HUMANOS" },
+          "pips": { "N": "200" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "RECURSOS HUMANOS" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0004" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0004" },
+          "descripcionBanca": { "S": "BANCA CORPORATIVA" },
+          "pips": { "N": "300" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "BANCA CORPORATIVA" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0005" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0005" },
+          "descripcionBanca": { "S": "BANCA COMERCIAL ZONA 1" },
+          "pips": { "N": "200" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "BANCA COMERCIAL ZONA 1" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0006" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0006" },
+          "descripcionBanca": { "S": "BANCA COMERCIAL ZONA 2" },
+          "pips": { "N": "131" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "BANCA COMERCIAL ZONA 2" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0007" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0007" },
+          "descripcionBanca": { "S": "TESORERIA" },
+          "pips": { "N": "150" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "TESORERIA" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SEGMENTO#0008" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SEGMENTO" },
+          "codigoBanca": { "S": "0008" },
+          "descripcionBanca": { "S": "NORMALIZACION" },
+          "pips": { "N": "200" },
+          "origen": { "S": "MANUAL" },
+          "GSI2PK": { "S": "SEGMENTO" },
+          "GSI2SK": { "S": "NORMALIZACION" }
+        }
+      }
+    }
+  ]
+}

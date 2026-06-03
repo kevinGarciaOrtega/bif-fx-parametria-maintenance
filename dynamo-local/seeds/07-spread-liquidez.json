@@ -1,0 +1,44 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_LIQUIDEZ#HORARIO_MERCADO_ABIERTO" },
+          "SK": { "S": "SENTIDO#BANCO_COMPRA_DOLARES" },
+          "tipo": { "S": "SPREAD_LIQUIDEZ" },
+          "pips": { "N": "50" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_LIQUIDEZ#HORARIO_MERCADO_ABIERTO" },
+          "SK": { "S": "SENTIDO#BANCO_VENDE_DOLARES" },
+          "tipo": { "S": "SPREAD_LIQUIDEZ" },
+          "pips": { "N": "25" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_LIQUIDEZ#HORARIO_MERCADO_CERRADO" },
+          "SK": { "S": "SENTIDO#BANCO_COMPRA_DOLARES" },
+          "tipo": { "S": "SPREAD_LIQUIDEZ" },
+          "pips": { "N": "0" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_LIQUIDEZ#HORARIO_MERCADO_CERRADO" },
+          "SK": { "S": "SENTIDO#BANCO_VENDE_DOLARES" },
+          "tipo": { "S": "SPREAD_LIQUIDEZ" },
+          "pips": { "N": "-15" }
+        }
+      }
+    }
+  ]
+}

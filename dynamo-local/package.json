@@ -1,0 +1,21 @@
+{
+  "name": "bif-fx-dynamo-local",
+  "version": "1.0.0",
+  "description": "DynamoDB Local setup for BIF FX tablero",
+  "scripts": {
+    "setup": "ts-node scripts/setup.ts",
+    "verify": "ts-node scripts/verify.ts",
+    "reset": "ts-node scripts/reset.ts",
+    "up": "docker-compose up -d",
+    "down": "docker-compose down"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.540.0",
+    "@aws-sdk/lib-dynamodb": "^3.540.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "@types/node": "^20.11.30"
+  }
+}

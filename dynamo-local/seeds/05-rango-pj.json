@@ -1,0 +1,56 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PJ#001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PJ" },
+          "id": { "S": "001" },
+          "importeMinimo": { "N": "0.00" },
+          "importeMaximo": { "N": "1000.00" },
+          "pips": { "N": "100" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PJ#002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PJ" },
+          "id": { "S": "002" },
+          "importeMinimo": { "N": "1000.00" },
+          "importeMaximo": { "N": "10000.00" },
+          "pips": { "N": "80" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PJ#003" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PJ" },
+          "id": { "S": "003" },
+          "importeMinimo": { "N": "10000.00" },
+          "importeMaximo": { "N": "90000.00" },
+          "pips": { "N": "60" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "RANGO_PJ#004" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "RANGO_PJ" },
+          "id": { "S": "004" },
+          "importeMinimo": { "N": "90000.00" },
+          "importeMaximo": { "N": "100000.00" },
+          "pips": { "N": "40" }
+        }
+      }
+    }
+  ]
+}

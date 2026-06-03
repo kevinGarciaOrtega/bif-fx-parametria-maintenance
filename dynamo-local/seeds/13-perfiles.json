@@ -1,0 +1,40 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PERFIL" },
+          "nombre": { "S": "Administrador" },
+          "descripcion": { "S": "Acceso total al sistema" },
+          "estado": { "S": "ACTIVO" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#OPERATIVO" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PERFIL" },
+          "nombre": { "S": "Operativo" },
+          "descripcion": { "S": "Puede cotizar, transferir y gestionar clientes" },
+          "estado": { "S": "ACTIVO" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#CONSULTOR" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PERFIL" },
+          "nombre": { "S": "Consultor" },
+          "descripcion": { "S": "Solo lectura: puede consultar cotizaciones y reportes" },
+          "estado": { "S": "ACTIVO" }
+        }
+      }
+    }
+  ]
+}

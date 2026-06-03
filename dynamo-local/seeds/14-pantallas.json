@@ -1,0 +1,147 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#GESTION_PARAMETROS" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "GESTION_PARAMETROS" },
+          "nombre": { "S": "Gestión de Parámetros" },
+          "ruta": { "S": "/GestionParametros/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#VARIABLE_VOLATILIDAD" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "VARIABLE_VOLATILIDAD" },
+          "nombre": { "S": "Variable Volatilidad" },
+          "ruta": { "S": "/VariableVolatilidad/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#VARIABLE_HORARIO_MERCADO" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "VARIABLE_HORARIO_MERCADO" },
+          "nombre": { "S": "Variable Horario Mercado" },
+          "ruta": { "S": "/VariableHorarioMercado/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#VARIABLE_RANGO_IMPORTE" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "VARIABLE_RANGO_IMPORTE" },
+          "nombre": { "S": "Variable Rango Importe" },
+          "ruta": { "S": "/VariableRangoImporte/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#VARIABLE_SEGMENTO" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "VARIABLE_SEGMENTO" },
+          "nombre": { "S": "Variable Segmento" },
+          "ruta": { "S": "/VariableSegmento/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#VARIABLE_SPREAD_LIQUIDEZ" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "VARIABLE_SPREAD_LIQUIDEZ" },
+          "nombre": { "S": "Variable Spread Liquidez" },
+          "ruta": { "S": "/VariableSpreadLiquidez/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#BASE_SPREAD_CLIENTES" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "BASE_SPREAD_CLIENTES" },
+          "nombre": { "S": "Base Spread Clientes" },
+          "ruta": { "S": "/GestionClientes/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#GESTION_TC" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "GESTION_TC" },
+          "nombre": { "S": "Gestión Tipo de Cambio" },
+          "ruta": { "S": "/GestionTipoCambio/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "REPORTE_OPERACIONES" },
+          "nombre": { "S": "Reporte de Operaciones" },
+          "ruta": { "S": "/Reporte/Index" },
+          "plataforma": { "S": "WEB" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#APP_COTIZACION" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "APP_COTIZACION" },
+          "nombre": { "S": "Cotización" },
+          "ruta": { "S": "/cotizacion" },
+          "plataforma": { "S": "APP" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PANTALLA#APP_TRANSFERENCIA" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "PANTALLA" },
+          "pantallaId": { "S": "APP_TRANSFERENCIA" },
+          "nombre": { "S": "Transferencia" },
+          "ruta": { "S": "/transferencia" },
+          "plataforma": { "S": "APP" }
+        }
+      }
+    }
+  ]
+}

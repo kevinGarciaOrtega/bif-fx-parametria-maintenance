@@ -1,0 +1,121 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#CONTINGENCIA_DATATEC" },
+          "SK": { "S": "PARAM#ACTIVAR_CONTINGENCIA" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Contingencia Datatec" },
+          "nombre": { "S": "Activar contingencia (1:activo, 0:inactivo)" },
+          "valor": { "S": "0" },
+          "tipoValor": { "S": "INTEGER" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#CONTINGENCIA_DATATEC" },
+          "SK": { "S": "PARAM#TC_BANCO_COMPRA" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Contingencia Datatec" },
+          "nombre": { "S": "Tipo cambio Banco Compra" },
+          "valor": { "S": "3.72" },
+          "tipoValor": { "S": "DECIMAL" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#CONTINGENCIA_DATATEC" },
+          "SK": { "S": "PARAM#TC_BANCO_VENTA" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Contingencia Datatec" },
+          "nombre": { "S": "Tipo cambio Banco Venta" },
+          "valor": { "S": "3.73" },
+          "tipoValor": { "S": "DECIMAL" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#PLATAFORMA_FX_PJ" },
+          "SK": { "S": "PARAM#IMPORTE_MAXIMO_USD" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Plataforma FX PJ" },
+          "nombre": { "S": "Importe maximo permitido en dolares (USD)" },
+          "valor": { "S": "500000.00" },
+          "tipoValor": { "S": "DECIMAL" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#PLATAFORMA_FX_PJ" },
+          "SK": { "S": "PARAM#TIEMPO_MAXIMO_CONTADOR" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Plataforma FX PJ" },
+          "nombre": { "S": "Tiempo maximo contador (MM:SS)" },
+          "valor": { "S": "05:00" },
+          "tipoValor": { "S": "TIME" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#PLATAFORMA_FX_PN" },
+          "SK": { "S": "PARAM#IMPORTE_MAXIMO_USD" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Plataforma FX PN" },
+          "nombre": { "S": "Importe maximo permitido en dolares (USD)" },
+          "valor": { "S": "25000.00" },
+          "tipoValor": { "S": "DECIMAL" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#PLATAFORMA_FX_PN" },
+          "SK": { "S": "PARAM#TIEMPO_MAXIMO_CONTADOR" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Plataforma FX PN" },
+          "nombre": { "S": "Tiempo maximo contador (MM:SS)" },
+          "valor": { "S": "05:00" },
+          "tipoValor": { "S": "TIME" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#PLATAFORMA_FX" },
+          "SK": { "S": "PARAM#BUZON_CORREOS" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Plataforma FX" },
+          "nombre": { "S": "Buzon de correos (separado por punto y coma)" },
+          "valor": { "S": "dcorro@banbif.com.pe;erlosa@banbif.com.pe" },
+          "tipoValor": { "S": "STRING" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PARAMETRO#PLATAFORMA_FX" },
+          "SK": { "S": "PARAM#TIEMPO_LIMITE_BANNER" },
+          "tipo": { "S": "PARAMETRO" },
+          "grupo": { "S": "Plataforma FX" },
+          "nombre": { "S": "Tiempo limite de contador para mostrar banner (MM:SS)" },
+          "valor": { "S": "00:30" },
+          "tipoValor": { "S": "TIME" }
+        }
+      }
+    }
+  ]
+}

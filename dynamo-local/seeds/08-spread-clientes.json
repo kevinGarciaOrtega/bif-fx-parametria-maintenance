@@ -1,0 +1,123 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_CLIENTE#437" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SPREAD_CLIENTE" },
+          "codigoIbs": { "S": "437" },
+          "razonSocial": { "S": "ALICO" },
+          "tipoPersoneria": { "S": "Persona Juridica" },
+          "tipoDocumento": { "S": "RUC" },
+          "nroDocumento": { "S": "20100055237" },
+          "codigoBanca": { "S": "0004" },
+          "descripcionBanca": { "S": "BANCA CORPORATIVA GRUPO 1" },
+          "spreadPips": { "N": "150" },
+          "flagMotor": { "S": "ACTIVO" },
+          "GSI2PK": { "S": "SPREAD_CLIENTE" },
+          "GSI2SK": { "S": "437" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_CLIENTE#52291" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SPREAD_CLIENTE" },
+          "codigoIbs": { "S": "52291" },
+          "razonSocial": { "S": "GRUPO" },
+          "tipoPersoneria": { "S": "Persona Juridica" },
+          "tipoDocumento": { "S": "RUC" },
+          "nroDocumento": { "S": "20379806768" },
+          "spreadPips": { "N": "20" },
+          "flagMotor": { "S": "INACTIVO" },
+          "GSI2PK": { "S": "SPREAD_CLIENTE" },
+          "GSI2SK": { "S": "52291" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_CLIENTE#958362" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SPREAD_CLIENTE" },
+          "codigoIbs": { "S": "958362" },
+          "razonSocial": { "S": "ESTUD" },
+          "tipoPersoneria": { "S": "Persona Juridica" },
+          "tipoDocumento": { "S": "RUC" },
+          "nroDocumento": { "S": "20278437354" },
+          "codigoBanca": { "S": "0006" },
+          "descripcionBanca": { "S": "BANCA COMERCIAL ZONA 6" },
+          "spreadPips": { "N": "10" },
+          "flagMotor": { "S": "ACTIVO" },
+          "GSI2PK": { "S": "SPREAD_CLIENTE" },
+          "GSI2SK": { "S": "958362" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_CLIENTE#2461987" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SPREAD_CLIENTE" },
+          "codigoIbs": { "S": "2461987" },
+          "tipoPersoneria": { "S": "Persona Natural" },
+          "tipoDocumento": { "S": "DNI" },
+          "nroDocumento": { "S": "07813699" },
+          "apellidoPaterno": { "S": "PUG CAS" },
+          "codigoBanca": { "S": "0002" },
+          "spreadPips": { "N": "150" },
+          "flagMotor": { "S": "INACTIVO" },
+          "GSI2PK": { "S": "SPREAD_CLIENTE" },
+          "GSI2SK": { "S": "2461987" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_CLIENTE#2457245" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SPREAD_CLIENTE" },
+          "codigoIbs": { "S": "2457245" },
+          "tipoPersoneria": { "S": "Persona Natural" },
+          "tipoDocumento": { "S": "DNI" },
+          "nroDocumento": { "S": "10005188" },
+          "apellidoPaterno": { "S": "ALCALDE" },
+          "apellidoMaterno": { "S": "UREÑA" },
+          "nombres": { "S": "MIKA" },
+          "codigoBanca": { "S": "0002" },
+          "spreadPips": { "N": "150" },
+          "flagMotor": { "S": "ACTIVO" },
+          "GSI2PK": { "S": "SPREAD_CLIENTE" },
+          "GSI2SK": { "S": "2457245" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SPREAD_CLIENTE#2432592" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "SPREAD_CLIENTE" },
+          "codigoIbs": { "S": "2432592" },
+          "tipoPersoneria": { "S": "Persona Natural" },
+          "tipoDocumento": { "S": "DNI" },
+          "nroDocumento": { "S": "07585436" },
+          "apellidoPaterno": { "S": "ALC VEL" },
+          "apellidoMaterno": { "S": "OSC" },
+          "nombres": { "S": "MAN" },
+          "codigoBanca": { "S": "0002" },
+          "spreadPips": { "N": "150" },
+          "flagMotor": { "S": "ACTIVO" },
+          "GSI2PK": { "S": "SPREAD_CLIENTE" },
+          "GSI2SK": { "S": "2432592" }
+        }
+      }
+    }
+  ]
+}

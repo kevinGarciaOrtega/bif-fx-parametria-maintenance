@@ -1,0 +1,289 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#GESTION_PARAMETROS" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#GESTION_PARAMETROS" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#VARIABLE_VOLATILIDAD" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#VARIABLE_VOLATILIDAD" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#VARIABLE_HORARIO_MERCADO" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#VARIABLE_HORARIO_MERCADO" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#VARIABLE_RANGO_IMPORTE" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#VARIABLE_RANGO_IMPORTE" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#VARIABLE_SEGMENTO" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#VARIABLE_SEGMENTO" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#VARIABLE_SPREAD_LIQUIDEZ" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#VARIABLE_SPREAD_LIQUIDEZ" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#BASE_SPREAD_CLIENTES" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#BASE_SPREAD_CLIENTES" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#GESTION_TC" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#GESTION_TC" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#APP_COTIZACION" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#APP_COTIZACION" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "SK": { "S": "PANTALLA#APP_TRANSFERENCIA" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#ADMINISTRADOR" },
+          "GSI3SK": { "S": "PANTALLA#APP_TRANSFERENCIA" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": true }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#OPERATIVO" },
+          "SK": { "S": "PANTALLA#BASE_SPREAD_CLIENTES" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#OPERATIVO" },
+          "GSI3SK": { "S": "PANTALLA#BASE_SPREAD_CLIENTES" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#OPERATIVO" },
+          "SK": { "S": "PANTALLA#GESTION_TC" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#OPERATIVO" },
+          "GSI3SK": { "S": "PANTALLA#GESTION_TC" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": false },
+          "puedeEditar": { "BOOL": true },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#OPERATIVO" },
+          "SK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#OPERATIVO" },
+          "GSI3SK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": false },
+          "puedeEditar": { "BOOL": false },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#OPERATIVO" },
+          "SK": { "S": "PANTALLA#APP_COTIZACION" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#OPERATIVO" },
+          "GSI3SK": { "S": "PANTALLA#APP_COTIZACION" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": false },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#OPERATIVO" },
+          "SK": { "S": "PANTALLA#APP_TRANSFERENCIA" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#OPERATIVO" },
+          "GSI3SK": { "S": "PANTALLA#APP_TRANSFERENCIA" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": true },
+          "puedeEditar": { "BOOL": false },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#CONSULTOR" },
+          "SK": { "S": "PANTALLA#GESTION_TC" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#CONSULTOR" },
+          "GSI3SK": { "S": "PANTALLA#GESTION_TC" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": false },
+          "puedeEditar": { "BOOL": false },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#CONSULTOR" },
+          "SK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#CONSULTOR" },
+          "GSI3SK": { "S": "PANTALLA#REPORTE_OPERACIONES" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": false },
+          "puedeEditar": { "BOOL": false },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "PERFIL#CONSULTOR" },
+          "SK": { "S": "PANTALLA#APP_COTIZACION" },
+          "tipo": { "S": "PERFIL_ACCESO" },
+          "GSI3PK": { "S": "PERFIL#CONSULTOR" },
+          "GSI3SK": { "S": "PANTALLA#APP_COTIZACION" },
+          "puedeVer": { "BOOL": true },
+          "puedeCrear": { "BOOL": false },
+          "puedeEditar": { "BOOL": false },
+          "puedeEliminar": { "BOOL": false }
+        }
+      }
+    }
+  ]
+}

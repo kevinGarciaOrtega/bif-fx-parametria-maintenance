@@ -1,0 +1,41 @@
+{
+  "name": "bif-fx-parameterization-maintenance-svc",
+  "version": "1.0.0",
+  "description": "Servicio Lambda de mantenimiento de parametría BIF FX",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/**/*.ts --bundle --platform=node --target=node20 --outdir=dist",
+    "dev": "serverless offline",
+    "deploy:dev": "serverless deploy --stage dev",
+    "deploy:qa": "serverless deploy --stage qa",
+    "deploy:prod": "serverless deploy --stage prod",
+    "test": "jest --coverage",
+    "test:unit": "jest tests/unit --coverage",
+    "test:integration": "jest tests/integration",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.540.0",
+    "@aws-sdk/lib-dynamodb": "^3.540.0",
+    "zod": "^3.22.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.136",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "serverless": "^3.38.0",
+    "serverless-esbuild": "^1.52.1",
+    "serverless-offline": "^13.3.3",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.2"
+  }
+}

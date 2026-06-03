@@ -1,0 +1,34 @@
+{
+  "tablero-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "VOLATILIDAD#001" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "VOLATILIDAD" },
+          "id": { "S": "001" },
+          "nombre": { "S": "Volatilidad Activa" },
+          "pips": { "N": "100" },
+          "estadoActual": { "BOOL": false },
+          "updatedAt": { "S": "2026-05-25T08:30:00Z" },
+          "updatedBy": { "S": "ROBERT.GARCIA" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "VOLATILIDAD#002" },
+          "SK": { "S": "METADATA" },
+          "tipo": { "S": "VOLATILIDAD" },
+          "id": { "S": "002" },
+          "nombre": { "S": "Volatilidad Inactiva" },
+          "pips": { "N": "200" },
+          "estadoActual": { "BOOL": true },
+          "updatedAt": { "S": "2026-05-25T08:30:00Z" },
+          "updatedBy": { "S": "ROBERT.GARCIA" }
+        }
+      }
+    }
+  ]
+}
