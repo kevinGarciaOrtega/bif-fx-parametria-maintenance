@@ -1,4 +1,4 @@
-service: bif-fx-parameterization-maintenance-svc
+service: bif-fx-param-mantainaice
 
 frameworkVersion: '3'
 
