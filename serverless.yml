@@ -11,6 +11,20 @@ provider:
     DYNAMO_TABLE: tablero-${self:provider.stage}
     STAGE: ${self:provider.stage}
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+            - dynamodb:Scan
+            - dynamodb:Query
+          Resource:
+            - arn:aws:dynamodb:${opt:region, 'us-east-1'}:*:table/tablero-${self:provider.stage}
+            - arn:aws:dynamodb:${opt:region, 'us-east-1'}:*:table/tablero-${self:provider.stage}/index/*
 
 # src/handlers/<name>.handler.ts  →  handler: src/handlers/<name>.handler.handler
 functions:
@@ -50,15 +64,69 @@ functions:
           path: 'feriado/{proxy+}'
           method: any
 
-  rangoImporte:
-    handler: src/handlers/rangoImporte.handler.handler
+  listarRangoImportePN:
+    handler: src/handlers/rangoImporte.handler.listarPN
     events:
       - http:
-          path: rango-importe
-          method: any
+          path: /parametros/rango-importe/pn
+          method: get
+          cors: true
+
+  crearRangoImportePN:
+    handler: src/handlers/rangoImporte.handler.crearPN
+    events:
       - http:
-          path: 'rango-importe/{proxy+}'
-          method: any
+          path: /parametros/rango-importe/pn
+          method: post
+          cors: true
+
+  actualizarRangoImportePN:
+    handler: src/handlers/rangoImporte.handler.actualizarPN
+    events:
+      - http:
+          path: /parametros/rango-importe/pn/{id}
+          method: put
+          cors: true
+
+  eliminarRangoImportePN:
+    handler: src/handlers/rangoImporte.handler.eliminarPN
+    events:
+      - http:
+          path: /parametros/rango-importe/pn/{id}
+          method: delete
+          cors: true
+
+  listarRangoImportePJ:
+    handler: src/handlers/rangoImporte.handler.listarPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj
+          method: get
+          cors: true
+
+  crearRangoImportePJ:
+    handler: src/handlers/rangoImporte.handler.crearPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj
+          method: post
+          cors: true
+
+  actualizarRangoImportePJ:
+    handler: src/handlers/rangoImporte.handler.actualizarPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj/{id}
+          method: put
+          cors: true
+
+  eliminarRangoImportePJ:
+    handler: src/handlers/rangoImporte.handler.eliminarPJ
+    events:
+      - http:
+          path: /parametros/rango-importe/pj/{id}
+          method: delete
+          cors: true
 
   segmento:
     handler: src/handlers/segmento.handler.handler
