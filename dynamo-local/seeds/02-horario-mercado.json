@@ -1,0 +1,13 @@
+[
+  {
+    "pk": "HORARIO#USD",
+    "sk": "#DIA#LUN",
+    "moneda": "USD",
+    "diaSemana": "LUN",
+    "horaApertura": "09:00",
+    "horaCierre": "17:00",
+    "estado": "ACTIVO",
+    "creadoPor": "admin",
+    "fechaCreacion": "2026-01-01T00:00:00.000Z"
+  }
+]

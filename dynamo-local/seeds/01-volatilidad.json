@@ -1,0 +1,22 @@
+[
+  {
+    "pk": "VOLATILIDAD#USD",
+    "sk": "#FECHA#2026-01-01",
+    "moneda": "USD",
+    "valorPorcentaje": 5.5,
+    "fechaVigencia": "2026-01-01",
+    "estado": "ACTIVO",
+    "creadoPor": "admin",
+    "fechaCreacion": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "pk": "VOLATILIDAD#EUR",
+    "sk": "#FECHA#2026-01-01",
+    "moneda": "EUR",
+    "valorPorcentaje": 4.2,
+    "fechaVigencia": "2026-01-01",
+    "estado": "ACTIVO",
+    "creadoPor": "admin",
+    "fechaCreacion": "2026-01-01T00:00:00.000Z"
+  }
+]

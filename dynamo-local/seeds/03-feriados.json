@@ -1,0 +1,12 @@
+[
+  {
+    "pk": "FERIADO#PE",
+    "sk": "#FECHA#2026-01-01",
+    "pais": "PE",
+    "fecha": "2026-01-01",
+    "descripcion": "Año Nuevo",
+    "estado": "ACTIVO",
+    "creadoPor": "admin",
+    "fechaCreacion": "2026-01-01T00:00:00.000Z"
+  }
+]

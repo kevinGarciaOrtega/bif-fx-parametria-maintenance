@@ -1,0 +1,38 @@
+{
+  "name": "bif-fx-parameterization-maintenance-svc",
+  "version": "1.0.0",
+  "description": "Microservicio Lambda para parametrización FX",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:int": "jest tests/integration",
+    "test:coverage": "jest --coverage",
+    "dev": "serverless offline",
+    "dynamo:setup": "cd dynamo-local && ts-node scripts/setup.ts",
+    "dynamo:verify": "cd dynamo-local && ts-node scripts/verify.ts",
+    "dynamo:reset": "cd dynamo-local && ts-node scripts/reset.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.28.0",
+    "jest": "^29.0.0",
+    "serverless": "^3.40.0",
+    "serverless-esbuild": "^1.57.2",
+    "serverless-offline": "^14.7.1",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}

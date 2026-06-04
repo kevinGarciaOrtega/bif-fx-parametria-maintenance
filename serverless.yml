@@ -1,0 +1,203 @@
+service: bif-fx-parameterization-maintenance-svc
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: ${opt:region, 'us-east-1'}
+  stage: ${opt:stage, 'dev'}
+  environment:
+    DYNAMO_TABLE: tablero-${self:provider.stage}
+    STAGE: ${self:provider.stage}
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"
+
+# src/handlers/<name>.handler.ts  →  handler: src/handlers/<name>.handler.handler
+functions:
+  volatilidad:
+    handler: src/handlers/volatilidad.handler.handler
+    events:
+      - http:
+          path: 'volatilidad/{moneda}'
+          method: get
+      - http:
+          path: volatilidad
+          method: post
+      - http:
+          path: 'volatilidad/{moneda}/{fecha}'
+          method: put
+      - http:
+          path: 'volatilidad/{moneda}/{fecha}'
+          method: delete
+
+  horarioMercado:
+    handler: src/handlers/horarioMercado.handler.handler
+    events:
+      - http:
+          path: horario-mercado
+          method: any
+      - http:
+          path: 'horario-mercado/{proxy+}'
+          method: any
+
+  feriado:
+    handler: src/handlers/feriado.handler.handler
+    events:
+      - http:
+          path: feriado
+          method: any
+      - http:
+          path: 'feriado/{proxy+}'
+          method: any
+
+  rangoImporte:
+    handler: src/handlers/rangoImporte.handler.handler
+    events:
+      - http:
+          path: rango-importe
+          method: any
+      - http:
+          path: 'rango-importe/{proxy+}'
+          method: any
+
+  segmento:
+    handler: src/handlers/segmento.handler.handler
+    events:
+      - http:
+          path: segmento
+          method: any
+      - http:
+          path: 'segmento/{proxy+}'
+          method: any
+
+  spreadLiquidez:
+    handler: src/handlers/spreadLiquidez.handler.handler
+    events:
+      - http:
+          path: spread-liquidez
+          method: any
+      - http:
+          path: 'spread-liquidez/{proxy+}'
+          method: any
+
+  spreadCliente:
+    handler: src/handlers/spreadCliente.handler.handler
+    events:
+      - http:
+          path: spread-cliente
+          method: any
+      - http:
+          path: 'spread-cliente/{proxy+}'
+          method: any
+
+  tipoCambio:
+    handler: src/handlers/tipoCambio.handler.handler
+    events:
+      - http:
+          path: tipo-cambio
+          method: any
+      - http:
+          path: 'tipo-cambio/{proxy+}'
+          method: any
+
+  parametroSistema:
+    handler: src/handlers/parametroSistema.handler.handler
+    events:
+      - http:
+          path: parametro-sistema
+          method: any
+      - http:
+          path: 'parametro-sistema/{proxy+}'
+          method: any
+
+  usuario:
+    handler: src/handlers/usuario.handler.handler
+    events:
+      - http:
+          path: usuario
+          method: any
+      - http:
+          path: 'usuario/{proxy+}'
+          method: any
+
+  perfil:
+    handler: src/handlers/perfil.handler.handler
+    events:
+      - http:
+          path: perfil
+          method: any
+      - http:
+          path: 'perfil/{proxy+}'
+          method: any
+
+  listarVolatilidad:
+    handler: src/handlers/volatilidad.listar
+    events:
+      - http:
+          path: /parametros/volatilidad
+          method: GET
+          cors: true
+
+  actualizarVolatilidad:
+    handler: src/handlers/volatilidad.actualizar
+    events:
+      - http:
+          path: /parametros/volatilidad/{id}
+          method: PUT
+          cors: true
+
+  listarHorario:
+    handler: src/handlers/horarioMercado.listar
+    events:
+      - http:
+          path: /parametros/horario-mercado
+          method: GET
+          cors: true
+
+  actualizarHorario:
+    handler: src/handlers/horarioMercado.actualizar
+    events:
+      - http:
+          path: /parametros/horario-mercado/{id}
+          method: PUT
+          cors: true
+
+  listarFeriados:
+    handler: src/handlers/feriado.listar
+    events:
+      - http:
+          path: /parametros/feriados
+          method: GET
+          cors: true
+
+  crearFeriado:
+    handler: src/handlers/feriado.crear
+    events:
+      - http:
+          path: /parametros/feriados
+          method: POST
+          cors: true
+
+  eliminarFeriado:
+    handler: src/handlers/feriado.eliminar
+    events:
+      - http:
+          path: /parametros/feriados/{fecha}
+          method: DELETE
+          cors: true
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+    sourcemap: true
+    target: node20
+    platform: node
+  serverless-offline:
+    httpPort: 3000
+    lambdaPort: 3010
+    noPrependStageInUrl: true
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
