@@ -1,12 +1,14 @@
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
-const isLocal = process.env.STAGE === "dev";
+// Solo usa endpoint local si DYNAMO_ENDPOINT está explícitamente definido
+const dynamoEndpoint = process.env.DYNAMO_ENDPOINT;
+const isLocal = !!dynamoEndpoint;
 
 const client = new DynamoDBClient({
   region: process.env.AWS_REGION ?? "us-east-1",
   ...(isLocal && {
-    endpoint: process.env.DYNAMO_ENDPOINT ?? "http://localhost:8000",
+    endpoint: dynamoEndpoint,
     credentials: {
       accessKeyId: process.env.AWS_ACCESS_KEY_ID ?? "local",
       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ?? "local",
