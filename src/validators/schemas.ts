@@ -60,3 +60,49 @@ export const FeriadoCreateSchema = z.object({
 });
 
 export type FeriadoCreateInput = z.infer<typeof FeriadoCreateSchema>;
+
+// ── RANGO IMPORTE ───────────────────────────────────────────
+export const RangoImporteCreateSchema = z.object({
+  importeMaximo: z
+    .number({ invalid_type_error: "Importe máximo debe ser un número" })
+    .positive("Importe máximo debe ser > 0"),
+  pips: z
+    .number({ invalid_type_error: "PIPs debe ser un número" })
+    .int("PIPs debe ser un número entero")
+    .min(0, "PIPs debe ser >= 0"),
+});
+
+export const RangoImporteUpdateSchema = z.object({
+  importeMaximo: z
+    .number({ invalid_type_error: "Importe máximo debe ser un número" })
+    .positive("Importe máximo debe ser > 0"),
+  pips: z
+    .number({ invalid_type_error: "PIPs debe ser un número" })
+    .int("PIPs debe ser un número entero")
+    .min(0, "PIPs debe ser >= 0"),
+});
+
+export type RangoImporteCreateInput = z.infer<typeof RangoImporteCreateSchema>;
+export type RangoImporteUpdateInput = z.infer<typeof RangoImporteUpdateSchema>;
+
+// ── SEGMENTO ─────────────────────────────────────────────────
+export const SegmentoCreateSchema = z.object({
+  descripcionBanca: z
+    .string({ required_error: "descripcionBanca es requerida" })
+    .min(1, "descripcionBanca no puede estar vacía"),
+  pips: z
+    .number({ invalid_type_error: "PIPs debe ser un número" })
+    .int("PIPs debe ser un número entero")
+    .min(0, "PIPs debe ser >= 0")
+    .default(100),
+});
+
+export const SegmentoUpdateSchema = z.object({
+  pips: z
+    .number({ invalid_type_error: "PIPs debe ser un número" })
+    .int("PIPs debe ser un número entero")
+    .min(0, "PIPs debe ser >= 0"),
+});
+
+export type SegmentoCreateInput = z.infer<typeof SegmentoCreateSchema>;
+export type SegmentoUpdateInput = z.infer<typeof SegmentoUpdateSchema>;

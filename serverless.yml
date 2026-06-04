@@ -65,7 +65,7 @@ functions:
           method: any
 
   listarRangoImportePN:
-    handler: src/handlers/rangoImporte.handler.listarPN
+    handler: src/handlers/rangoImporte.listarPN
     events:
       - http:
           path: /parametros/rango-importe/pn
@@ -73,7 +73,7 @@ functions:
           cors: true
 
   crearRangoImportePN:
-    handler: src/handlers/rangoImporte.handler.crearPN
+    handler: src/handlers/rangoImporte.crearPN
     events:
       - http:
           path: /parametros/rango-importe/pn
@@ -81,7 +81,7 @@ functions:
           cors: true
 
   actualizarRangoImportePN:
-    handler: src/handlers/rangoImporte.handler.actualizarPN
+    handler: src/handlers/rangoImporte.actualizarPN
     events:
       - http:
           path: /parametros/rango-importe/pn/{id}
@@ -89,7 +89,7 @@ functions:
           cors: true
 
   eliminarRangoImportePN:
-    handler: src/handlers/rangoImporte.handler.eliminarPN
+    handler: src/handlers/rangoImporte.eliminarPN
     events:
       - http:
           path: /parametros/rango-importe/pn/{id}
@@ -97,7 +97,7 @@ functions:
           cors: true
 
   listarRangoImportePJ:
-    handler: src/handlers/rangoImporte.handler.listarPJ
+    handler: src/handlers/rangoImporte.listarPJ
     events:
       - http:
           path: /parametros/rango-importe/pj
@@ -105,7 +105,7 @@ functions:
           cors: true
 
   crearRangoImportePJ:
-    handler: src/handlers/rangoImporte.handler.crearPJ
+    handler: src/handlers/rangoImporte.crearPJ
     events:
       - http:
           path: /parametros/rango-importe/pj
@@ -113,7 +113,7 @@ functions:
           cors: true
 
   actualizarRangoImportePJ:
-    handler: src/handlers/rangoImporte.handler.actualizarPJ
+    handler: src/handlers/rangoImporte.actualizarPJ
     events:
       - http:
           path: /parametros/rango-importe/pj/{id}
@@ -121,22 +121,44 @@ functions:
           cors: true
 
   eliminarRangoImportePJ:
-    handler: src/handlers/rangoImporte.handler.eliminarPJ
+    handler: src/handlers/rangoImporte.eliminarPJ
     events:
       - http:
           path: /parametros/rango-importe/pj/{id}
           method: delete
           cors: true
 
-  segmento:
-    handler: src/handlers/segmento.handler.handler
+  listarSegmento:
+    handler: src/handlers/segmento.listar
     events:
       - http:
-          path: segmento
-          method: any
+          path: /parametros/segmento
+          method: get
+          cors: true
+
+  crearSegmento:
+    handler: src/handlers/segmento.crear
+    events:
       - http:
-          path: 'segmento/{proxy+}'
-          method: any
+          path: /parametros/segmento
+          method: post
+          cors: true
+
+  actualizarSegmento:
+    handler: src/handlers/segmento.actualizar
+    events:
+      - http:
+          path: /parametros/segmento/{codigoBanca}
+          method: put
+          cors: true
+
+  eliminarSegmento:
+    handler: src/handlers/segmento.eliminar
+    events:
+      - http:
+          path: /parametros/segmento/{codigoBanca}
+          method: delete
+          cors: true
 
   spreadLiquidez:
     handler: src/handlers/spreadLiquidez.handler.handler
